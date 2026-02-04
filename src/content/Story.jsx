@@ -12,7 +12,7 @@ function Story() {
             </div>
 
             <div className='story-img'>
-                <img src="images\story.webp"></img>
+                <img src="images/story.webp"></img>
             </div>
         </section>
 

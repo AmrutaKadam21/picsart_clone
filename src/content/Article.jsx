@@ -41,7 +41,7 @@ function Article() {
 
                 </div>
                 <div className='side-img'>
-                    <img src='\images\community.webp'></img>
+                    <img src='/images/community.webp'></img>
                 </div>
             </section>
         </section>
