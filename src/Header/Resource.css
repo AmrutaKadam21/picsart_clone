@@ -1,0 +1,147 @@
+.resource-wrapper{
+    display: flex;
+    top:60px;
+    left:0;
+    background-color: white;
+    width: 100%;
+    position:fixed;
+    height:60%;
+ box-shadow: 0 10px 40px rgba(0,0,0,0.6); 
+}
+.resource-left{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+}
+.learn{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: black;
+    margin: 40px 40px 0 ;
+}
+
+.cont{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.block{
+  display: flex;
+  margin-left: 50px;
+  gap:40px;
+
+}
+.blog h4{
+     font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: black;
+    margin: 30px;
+}
+
+.blog p{
+    margin: 10px 30px;
+     font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: black;
+}
+.blog p:hover{
+    color: 
+rgb(194, 9, 193);
+}
+
+.blog span{
+    color:rgb(194, 9, 193);
+    font-size: 14px;
+  margin: 23px;
+}
+
+.ignite-img{
+    margin-top: 40px;
+    width: 50%;
+    height:40%;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    background-color: rgba(254, 243, 232, 0.43);
+}
+
+.ignite-img img{
+    width:200px;
+}
+.img-descri{
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+text-align: center;
+}
+
+.hr{
+    width: 500px;
+ color: rgba(140, 139, 139, 0.636);   
+}
+
+.resource-right{
+  
+    margin-top: 40px;
+}
+
+.connect{
+     font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: black;
+    margin: 40px 0px  ;
+    
+}
+
+.right-descri{
+  
+     margin-left: 0px;
+    margin-top: 10px;
+}
+
+.block2 h4{
+        font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: black;
+    margin: 30px;
+}
+.block2 p{
+margin: 10px 30px;
+     font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: black;
+}
+.block2 p:hover{
+    color:rgb(194, 9, 193) ;
+}
+.one-side{
+    display: flex;
+    margin-right: 0%;
+}
+.purse{
+    margin-left: 10px;
+    margin:40px;
+    width:30%;
+    height:60%; 
+    text-align: center;
+    justify-content: center;
+    background-color:rgba(254, 243, 232, 0.43);
+}
+.purse img{
+    width:85%;
+    margin:auto;
+   
+}
+
+.purse-descri{
+  font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+text-align: center;  
+}

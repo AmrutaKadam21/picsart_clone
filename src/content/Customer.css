@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+
+.followers {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.followers p {
+    color: rgb(76, 76, 78);
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 15px;
+    margin-top: 40px;
+    line-height: 24px;
+
+}
+
+.followers span {
+    color: black;
+    font-size: 60px;
+    font-weight: 600;
+    margin: 15px;
+    line-height: 72px;
+
+
+}
+.tokens{
+    display: flex;
+    margin: 20px 90px;
+
+}
+
+.color-gradient1{
+  background: linear-gradient(100deg, #11aafd, #792bff, #e70aff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.color-gradient2{
+  background: linear-gradient(100deg, #a93a4b, #e24a7a, #ff5d2cdf);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.color-gradient3{
+  background: linear-gradient(100deg, #9e7e7e, #65454e, #412d43);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.color-gradient4{
+  background: linear-gradient(100deg, #11aafd, #792bff, #e70aff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.token1{
+    width: 300px;
+    height: 340px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(224, 223, 223, 0.392);
+    margin: 10px;
+}
+
+.token1 h1{
+    font-size: 70px;
+    font-weight: 600;
+    margin-top: 80px;
+   color: linear-gradient(270deg,blue,purple, rgb(250, 65, 222));
+}
+
+.token1 p{
+     font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: black;
+    margin-top: 0%;
+    margin:0 10px
+}
+
+.media {
+    display:flex;
+    flex-direction:column;
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+  background: #fff; 
+}
+
+.statement {
+    width:100%;
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.company {
+  display: flex;
+  flex-direction:row;
+  margin-top:30px;
+  gap: 40px;
+  align-item:center;
+  justify-content:center;
+}
+
+.company img {
+  max-width: 220px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.company img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .statement {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .company {
+    gap: 20px;
+  }
+
+  .company img {
+    max-width: 80px;
+    margin-bottom: 15px;
+  }
+}

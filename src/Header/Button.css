@@ -1,0 +1,33 @@
+
+body{
+    background-color: white;
+}
+.start-btn{
+    width:500px;
+    height:500px;
+    background-color: rgb(248, 246, 246);
+    border-radius: 20px;
+    color:black
+}
+
+.start-h2{
+font-weight: 700;
+color:black;
+line-height: 36px;
+font-size: 30px;
+text-align: center;
+justify-content: center;
+}
+
+.start-desri{
+  font-weight: 400;
+color:black;
+line-height: 24px;
+font-size: 16px;  
+text-align: center;
+justify-content: center;
+}
+
+.start-content{
+    display: flex;
+}

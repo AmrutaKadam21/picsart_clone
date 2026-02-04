@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+
+.menu {
+
+    width: 100%;
+    height: 120vh;
+    background-color: black;
+}
+
+.title span {
+    display: block;
+    width: 50%;
+    color: white;
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 180px;
+    padding: 50px 50px;
+}
+
+.title p {
+    width: 60%;
+    color: white;
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 70px;
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+.menubar {
+    min-height: 200px;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.menu1 {
+    width: 190%;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: 500;
+    letter-spacing: 0.06cap;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    color: rgba(141, 139, 139, 0.979);
+}
+
+
+.menu1:hover {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 42px;
+    transform: translateX(8px);
+}
+
+.tokens {
+    display: flex;
+}
+
+.preview-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 350px;
+}
+
+.preview-img {
+    width: 720px;
+    border-radius: 16px;
+    transition: opacity 0.5s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.free-btn {
+display: inline-block;
+    width: 12vw;
+    color: white;
+  margin-left: 170px;
+    font-weight: 600;
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 13px;
+    z-index: 5;
+    border: rgb(194, 9, 193);
+    border-radius: 25px;
+    background-color: rgb(194, 9, 193);
+}
+
+.menu1:hover~.preview-box .preview-img {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    height: auto; 
+    padding: 20px 10px;
+  }
+
+  .title span {
+    font-size: 32px;
+    line-height: 40px;
+    width: 100%;
+    margin: 20px 0 10px 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .title p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+
+  /* TOKENS SECTION */
+  .tokens {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* MENUBAR */
+  .menubar {
+    display: flex;           
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    width: 100%;
+    margin: 10px 0;
+    padding-bottom: 10px;
+  }
+
+  .menu1 {
+    min-width: 150px;       
+    font-size: 18px;
+    line-height: 28px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    text-align: center;
+    color: rgba(141, 139, 139, 0.979);
+  }
+
+  .menu1:hover {
+    font-size: 20px;
+    transform: none;
+  }
+
+  /* PREVIEW BOX */
+  .preview-box {
+    width: 90%;
+    max-width: 350px;
+    margin: 20px auto;
+  }
+
+  .preview-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  /* FREE BUTTON */
+  .free-btn {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+    font-size: 16px;
+    padding: 12px 0;
+    border-radius: 25px;
+  }
+
+  /* Optional: hide hover opacity effect on mobile */
+  .menu1:hover~.preview-box .preview-img {
+    opacity: 1;
+  }
+}

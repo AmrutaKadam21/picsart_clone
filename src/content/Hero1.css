@@ -1,0 +1,78 @@
+
+body{
+   font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+               "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.hero{
+      justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.imgs{
+    display: block;
+    margin: 4px;
+}
+.imgs img{
+    width:9vw;
+    height: 7vh;
+    margin-top: 30px;
+  
+   
+}
+
+
+.header-text{
+ text-align: center;
+ justify-items: center;
+}
+
+.gradient-text {
+  background: linear-gradient(180deg, #4411fd, #b52bff, #e70aff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.header-text span{
+color: black;
+font-size: 60px;
+font-weight:600 ;
+line-height: 72px;
+
+}
+
+.header-text p
+{
+    width: 40%;
+    color: black;
+    font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+}
+
+.header-text button{
+    color:white;
+    font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+padding: 13px;
+border: rgb(194, 9, 193);
+border-radius: 25px;
+background-color: rgb(194, 9, 193);
+}
+
+.hero-video{
+   margin:30px;
+    width: 70%;
+  border-radius: 12px;
+}
+@media (max-width: 768px) {
+
+.header-text button{
+    width:30%;
+}
+
+
+}

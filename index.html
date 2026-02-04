@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="public/images/web-logo (1).png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>picsart</title>
+
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+   <script>
+document.addEventListener("DOMContentLoaded", function() {
+  if (window.innerWidth <= 768) {
+    const images = [
+      { src: "images/fashion-beauty.png", text: "Fashion & Beauty" },
+      { src: "images/real-estate.png", text: "Real Estate" },
+      { src: "images/food-drink.png", text: "Food & Drink" },
+      { src: "images/interior-design.png", text: "Interior Design" },
+      { src: "images/health.png", text: "Health & Wellness" },
+      { src: "images/education.png", text: "Education" },
+      { src: "images/entertainment.webp", text: "Entertainment" }
+    ];
+
+    let current = 0;
+
+    const previewBox = document.querySelector(".preview-box");
+    const imgEl = previewBox.querySelector("img");
+
+    let titleEl = document.createElement("div");
+    titleEl.className = "mobile-title";
+    previewBox.appendChild(titleEl);
+
+    let prevBtn = document.createElement("button");
+    prevBtn.className = "nav-btn prev-btn";
+    prevBtn.textContent = "images/leftshift.png";
+
+    let nextBtn = document.createElement("button");
+    nextBtn.className = "nav-btn next-btn";
+    nextBtn.textContent = "➡️";
+
+    previewBox.appendChild(prevBtn);
+    previewBox.appendChild(nextBtn);
+
+    function update() {
+      imgEl.src = images[current].src;
+      titleEl.textContent = images[current].text;
+    }
+
+    prevBtn.addEventListener("click", () => {
+      current = (current - 1 + images.length) % images.length;
+      update();
+    });
+
+    nextBtn.addEventListener("click", () => {
+      current = (current + 1) % images.length;
+      update();
+    });
+
+    update();
+  }
+});
+</script>
+
+
+  </body>
+</html>

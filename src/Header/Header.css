@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 70px;
+  background: #fff;
+  z-index: 9999;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 40px;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.arrow {
+  width: 12px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.start {
+  background: rgb(194, 9, 193);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+}
+
+.login {
+  background: white;
+  border: 1px solid rgb(194, 9, 193);
+  color: rgb(194, 9, 193);
+  border-radius: 20px;
+  padding: 8px 14px;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+}
+.hamburger {
+  display: visible;
+  cursor: pointer;
+}
+
+.expand-search {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  margin-left: 10px;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    display: none; 
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    gap: 0;
+    z-index: 999;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav li {
+    padding: 12px 20px;
+    width: 100%;
+  }
+
+  .nav li span, .nav li a {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .start, .login {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+
+  .price-link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .expand-search {
+    width: 90%;
+    margin: 8px auto;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+
+  .nav-list {
+    padding: 10px 20px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    display: none;
+    border-top: 1px solid #ddd;
+    z-index: 999;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav li {
+    padding: 14px 20px;
+    width: 100%;
+  }
+
+  .nav li span,
+  .nav li a {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .start,
+  .login {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
